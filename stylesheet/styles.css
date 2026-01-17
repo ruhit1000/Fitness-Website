@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .font-inter {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
 }
 
 * {
@@ -21,7 +21,7 @@ html {
 }
 
 .bg-black {
-    background-color: black;
+    background: rgba(0, 0, 0, 1);
 }
 
 .btn-primary {
@@ -32,10 +32,14 @@ html {
     color: white;
     background-color: #E6533C;
     border-radius: 46px;
-}       
+}
 
 
 /* main style */
+
+header {
+    background: linear-gradient(180.00deg, rgb(17, 17, 17) 0%, rgba(119, 119, 119, 0.541) 100%);
+}
 
 nav {
     width: 75%;
@@ -110,7 +114,7 @@ nav {
 
 .join-btn {
     padding: 16px 40px;
-    margin-right: 16px;                          
+    margin-right: 16px;
 }
 
 .download-btn {
@@ -127,6 +131,10 @@ nav {
     position: relative;
 }
 
+.banner-image img {
+    vertical-align: middle;
+}
+
 .banner-image .badge {
     border: 1px solid rgba(255, 255, 255, 0.1);
     width: 193px;
@@ -136,7 +144,7 @@ nav {
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.1);
     position: absolute;
-    right: -100px;
+    right: -90px;
     top: 130px;
 }
 
@@ -161,6 +169,9 @@ nav {
     display: flex;
     gap: 12px;
     align-items: center;
+    position: absolute;
+    bottom: 60px;
+    left: -110px;
 }
 
 .banner-image .badge2 .circle {
@@ -170,11 +181,25 @@ nav {
     border-radius: 50%;
 }
 
+.banner-image .badge2 h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.banner-image .badge2 p {
+    color: rgba(255, 255, 255, 0.651);
+}
+
+.hide {
+    display: none !important;
+}
+
 
 /* responsiveness for small devices */
 @media screen and (max-width:576px) {
 
-    nav {
+    nav,
+    .banner {
         width: 90%;
     }
 
@@ -185,14 +210,47 @@ nav {
     .menu-icon {
         display: inline;
     }
+
+    .banner {
+        flex-direction: column;
+        gap: 47px
+    }
+
+    .banner-content h1 {
+        font-size: 2.25rem;
+        font-weight: 900;
+        margin-bottom: 28px;
+        max-width: 285px;
+    }
+
+    #club {
+        display: none;
+    }
+
+    .download-btn {
+        padding: 16px 20px;
+    }
+
+    .banner-image .badge {
+        right: -30px;
+    }
+
+    .banner-image .badge2 {
+        left: -30px;
+    }
 }
 
 
 /* responsiveness for tablet device */
 @media screen and (min-width:577px) and (max-width:992px) {
-    
-    nav {
+
+    nav,
+    .banner {
         width: 90%;
+    }
+
+    .banner {
+        flex-direction: column;
     }
 
 }
