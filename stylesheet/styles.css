@@ -83,6 +83,93 @@ nav {
     display: none;
 }
 
+.banner {
+    width: 72%;
+    max-width: 1036px;
+    margin: 20px auto;
+    display: flex;
+    gap: 88px;
+    align-items: center;
+}
+
+.banner-content {
+    max-width: 600px;
+}
+
+.banner-content h1 {
+    font-size: 4.875rem;
+    font-weight: 900;
+    margin-bottom: 28px;
+}
+
+.banner-content p {
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 28px;
+}
+
+.join-btn {
+    padding: 16px 40px;
+    margin-right: 16px;                          
+}
+
+.download-btn {
+    font-size: 1.125rem;
+    font-weight: 600;
+    border: 1px solid white;
+    background-color: transparent;
+    color: White;
+    padding: 16px 40px;
+    border-radius: 46px;
+}
+
+.banner-image {
+    position: relative;
+}
+
+.banner-image .badge {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 193px;
+    height: 98px;
+    padding: 13px 25px;
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    right: -100px;
+    top: 130px;
+}
+
+.banner-image .badge h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.banner-image .badge p {
+    font-size: 0.8125rem;
+    color: rgba(255, 255, 255, 0.651);
+}
+
+.banner-image .badge2 {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 206px;
+    height: 98px;
+    padding: 20px 23px;
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.banner-image .badge2 .circle {
+    height: 40px;
+    width: 40px;
+    background-color: #E6533C;
+    border-radius: 50%;
+}
+
 
 /* responsiveness for small devices */
 @media screen and (max-width:576px) {
