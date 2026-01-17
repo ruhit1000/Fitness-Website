@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* shared style */
+.color-white {
+    color: white;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.btn-primary {
+    font-size: 1.125rem;
+    font-weight: 600;
+    border: none;
+    padding: 8px 20px;
+    color: white;
+    background-color: #E6533C;
+    border-radius: 46px;
+}       
+
+
+/* main style */
+
+nav {
+    width: 75%;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 57px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    color: #E6533C;
+    font-size: 2.25rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.menu {
+    border: 1px solid rgba(255, 255, 255, 0.253);
+    border-radius: 39px;
+    padding: 12px 4px;
+}
+
+.menu ul {
+    display: flex;
+    gap: 47px;
+}
+
+.menu ul li {
+    list-style: none;
+    font-size: 1.125rem;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#about {
+    padding-right: 20px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+/* responsiveness for small devices */
+@media screen and (max-width:576px) {
+
+    nav {
+        width: 90%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: inline;
+    }
+}
+
+
+/* responsiveness for tablet device */
+@media screen and (min-width:577px) and (max-width:992px) {
+    
+    nav {
+        width: 90%;
+    }
+
+}
