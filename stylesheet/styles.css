@@ -313,6 +313,63 @@ nav {
     object-fit: cover;
 }
 
+#our-team {
+    padding-top: 90px;
+}
+
+.team-container {
+    width: 75%;
+    max-width: 1060px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.team-container .section-heading {
+    max-width: 671px;
+    margin: 0 auto 58px;
+}
+
+.team-images {
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 18px;
+}
+
+.trainer-card {
+    position: relative;
+}
+
+.trainer-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+    filter: brightness(80%);
+}
+
+.trainer-name {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-align: left;
+}
+
+.trainer-name h2 {
+    font-size: 1.25rem;
+    font-weight: 900;
+    margin-bottom: 3px;
+}
+
+.trainer-name p {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
 .hide {
     display: none !important;
 }
@@ -392,6 +449,15 @@ nav {
     .exercise-images img:nth-child(4) {
         grid-column: span 1;
     }
+
+    .team-container {
+        width: 90%;
+    }
+
+    .team-images {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 
@@ -400,7 +466,8 @@ nav {
 
     nav,
     .banner,
-    #habits {
+    #habit,
+    .team-container {
         width: 90%;
     }
 
