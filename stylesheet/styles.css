@@ -370,6 +370,71 @@ nav {
     color: rgba(255, 255, 255, 0.5);
 }
 
+footer {
+    margin-top: 88px;
+    padding-top: 66px;
+    padding-bottom: 35px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-container {
+    width: 75%;
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.199);
+}
+
+.footer-text {
+    max-width: 443px;
+}
+
+.footer-text h1 {
+    font-size: 4.375rem;
+    font-weight: 800;
+    font-style: italic;
+    color: #E6533C;
+    margin-bottom: 20px;
+}
+
+.footer-text p {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-menu {
+    display: flex;
+    gap: 152px;
+}
+
+.menu-item h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.menu-item ul {
+    list-style: none;
+}
+
+.menu-item ul li {
+    margin-bottom: 20px;
+}
+
+.menu-item ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 36px;
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
 .hide {
     display: none !important;
 }
@@ -379,7 +444,8 @@ nav {
 
     nav,
     .banner,
-    #habits {
+    #habits,
+    .footer-container {
         width: 90%;
     }
 
@@ -391,7 +457,9 @@ nav {
         display: inline;
     }
 
-    .banner {
+    .banner,
+    .footer-container,
+    .footer-menu {
         flex-direction: column;
         gap: 47px
     }
@@ -467,11 +535,13 @@ nav {
     nav,
     .banner,
     #habit,
-    .team-container {
+    .team-container,
+    .footer-container {
         width: 90%;
     }
 
-    .banner {
+    .banner,
+    .footer-container {
         flex-direction: column;
     }
 
@@ -489,6 +559,10 @@ nav {
 
     .extra-mile-container img {
         width: 100%;
+    }
+
+    .footer-container {
+        gap: 40px;
     }
 
 }
