@@ -279,7 +279,39 @@ nav {
     border-radius: 18px;
 }
 
+#Exercise {
+    padding-top: 100px;
+}
 
+.exercises-container {
+    width: 75%;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.exercises-container .section-heading {
+    max-width: 671px;
+    margin-bottom: 58px;
+}
+
+.exercise-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.exercise-images img:nth-child(2) {
+    grid-column: span 2;
+}
+
+.exercise-images img:nth-child(4) {
+    grid-column: span 2;
+}
+
+.exercise-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .hide {
     display: none !important;
@@ -289,7 +321,8 @@ nav {
 @media screen and (max-width:576px) {
 
     nav,
-    .banner, #habits {
+    .banner,
+    #habits {
         width: 90%;
     }
 
@@ -345,6 +378,20 @@ nav {
     .extra-mile-container img {
         width: 100%;
     }
+
+    .exercise-images {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        gap: 10px;
+    }
+
+    .exercise-images img:nth-child(2) {
+        grid-column: span 1;
+    }
+
+    .exercise-images img:nth-child(4) {
+        grid-column: span 1;
+    }
 }
 
 
@@ -352,7 +399,8 @@ nav {
 @media screen and (min-width:577px) and (max-width:992px) {
 
     nav,
-    .banner, #habits {
+    .banner,
+    #habits {
         width: 90%;
     }
 
@@ -381,6 +429,6 @@ nav {
 /* responsiveness for large tablet device */
 @media screen and (min-width:993px) and (max-width:1200px) {
     .habit-cards-container {
-        grid-template-columns: repeat(3, 1fr); 
+        grid-template-columns: repeat(3, 1fr);
     }
 }
