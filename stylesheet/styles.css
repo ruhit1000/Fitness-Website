@@ -34,6 +34,16 @@ html {
     border-radius: 46px;
 }
 
+.section-heading h2 {
+    font-size: 3rem;
+    margin-bottom: 14px;
+}
+
+.section-heading p {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
 
 /* main style */
 
@@ -190,16 +200,61 @@ nav {
     color: rgba(255, 255, 255, 0.651);
 }
 
+#habits {
+    width: 72.5%;
+    max-width: 1044px;
+    margin: 80px auto 0;
+    text-align: center;
+}
+
+#habits .section-heading {
+    max-width: 671px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom: 58px;
+}
+
+.habit-cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.habit-card {
+    padding: 0 25.5px;
+}
+
+.habit-card img {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.habit-card h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.habit-card p {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
 .hide {
     display: none !important;
 }
+
 
 
 /* responsiveness for small devices */
 @media screen and (max-width:576px) {
 
     nav,
-    .banner {
+    .banner, #habits {
         width: 90%;
     }
 
@@ -238,6 +293,10 @@ nav {
     .banner-image .badge2 {
         left: -30px;
     }
+
+    .habit-cards-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 
@@ -245,7 +304,7 @@ nav {
 @media screen and (min-width:577px) and (max-width:992px) {
 
     nav,
-    .banner {
+    .banner, #habits {
         width: 90%;
     }
 
@@ -253,4 +312,15 @@ nav {
         flex-direction: column;
     }
 
+    .habit-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* responsiveness for large tablet device */
+@media screen and (min-width:993px) and (max-width:1200px) {
+    .habit-cards-container {
+        grid-template-columns: repeat(3, 1fr); 
+    }
 }
